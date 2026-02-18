@@ -1,6 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
 // Nested Components, React tools
 function Greeting() {
   return (
@@ -18,6 +15,3 @@ const Message = () => {
   return <p>this is my message</p>;
 };
 //NB: we can do import and export of component too
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Greeting />);
