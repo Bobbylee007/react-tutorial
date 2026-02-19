@@ -32,7 +32,7 @@ const Title = () => (
   <h2>The Jasper Brooch : Time Travel Romance (The Celtic Brooch Book 14)</h2>
 );
 
-//css-in-js or react
+//css-in-js or react also call inline css
 const Author = () => (
   <h5 style={{ color: "#617d98", fontSize: "0.8rem", marginTop: "0.25rem" }}>
     Kindle Edition
