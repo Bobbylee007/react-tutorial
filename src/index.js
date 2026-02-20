@@ -4,40 +4,34 @@ import bookImg from "./bookImg.jpg";
 
 // Css
 import "./index.css";
+// setup vars
+const author = "Kindle Edition";
+const title = "i love to be in the Moon and Backss";
+
+
 function Booklist() {
+  //here we are rendering or invoking the Book we passing argument value for props
   return (
     <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book job='developer'/>
+      <Book ttile="random title" number={22} />
     </section>
   );
 }
 
-const Book = () => {
+//Book here is a func that can take in params call props
+const Book = (props) => {
+  console.log(props);
+  
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src={bookImg} alt="" />;<h2>{title}</h2>
+      <h5>{author}</h5>
+      {/* {console.log(props)} can also console.log() in JSX*/}
+      
     </article>
   );
 };
-const Image = () => <img src={bookImg} alt="" />;
-const Title = () => (
-  <h2>The Jasper Brooch : Time Travel Romance (The Celtic Brooch Book 14)</h2>
-);
-
-//css-in-js or react
-const Author = () => (
-  <h5 style={{ color: "#617d98", fontSize: "0.8rem", marginTop: "0.25rem" }}>
-    Kindle Edition
-  </h5>
-);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Booklist />);
