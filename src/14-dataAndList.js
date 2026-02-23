@@ -7,7 +7,7 @@ import johnBook from "./johnBook.jpg";
 import "./index.css";
 import { jsx } from "react/jsx-runtime";
 
-// iterating over data or list
+// data and list
 const books = [
   {
     img: bookimg,
@@ -22,23 +22,19 @@ const books = [
   },
 ];
 
-function Booklist() {
-  return (
-    <section className="booklist">
-      {books.map((book) => {
-        console.log(book);
-        const { img, author, title } = book;
+const names = ["john", "peter", "susan"];
+const newNames = names.map((name) => {
+  return <h1>{name}</h1>;
+});
+console.log(newNames);
 
-        return (
-         <Book book={book}></Book>
-        );
-      })}
-    </section>
-  );
+function Booklist() {
+  // JSX doesnt allow object only varables
+  return <section className="booklist">{newNames}</section>;
 }
 
 const Book = (props) => {
-  const { img, title, author } = props.book;
+  const { img, title, author } = props;
   console.log(props);
   return (
     <article className="book">
