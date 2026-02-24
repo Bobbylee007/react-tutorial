@@ -49,7 +49,7 @@ const Book = ({ img, title, author }) => {
   const clickHandler = (e) => {
     console.log(e);
     console.log(e.target);
-    
+
     alert("hello world");
   };
 
@@ -71,10 +71,12 @@ const Book = ({ img, title, author }) => {
 
   // as an in-line function & Reference
   return (
-    <article className="book" onMouseOver={()=>{
-      console.log(title);
-      
-    }}>
+    <article
+      className="book"
+      onMouseOver={() => {
+        console.log(title);
+      }}
+    >
       <img src={img} alt="" />
       <h2 onClick={() => console.log(title)}>{title}</h2>
       <h5>{author}</h5>
