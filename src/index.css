@@ -100,6 +100,38 @@ a{
     display: grid;
     place-content: center;
     margin: 54px auto;
+    gap: 16px;
+}
+
+.item {
+    background: var(--clr-white);
+    width: var(--fixed-width);
+    border-radius: var(--rd-corners);
+    display: flex;
+    justify-content:space-between ;
+
+
+}
+
+.item button,
+.item a {
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-primary-5);
+    letter-spacing: var(--spacing);
+    cursor: pointer;
+}
+
+.item {
+    padding: 1rem 2rem;
+}
+
+.item h4 {
+    margin-bottom: 0;
+}
+
+.item p {
+    margin-bottom: 0;
 }
 
 .btn {
@@ -113,7 +145,6 @@ a{
     font-size: 1rem;
     letter-spacing: var(--spacing);
     margin-block: 8px;
-    margin-inline: calc((margin-block) * 2);
     cursor: pointer;
     transition: var(--trans);
 
@@ -140,7 +171,7 @@ a{
     
     .container{
         grid-template-columns: repeat(3, 1fr);
-        /* align-items: start; */
+        align-items: start;
     }
 }
 
