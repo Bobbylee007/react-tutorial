@@ -1,8 +1,7 @@
 import React from "react";
-import Setup from "./topics/02-advance/1-setup-useState/4-useState-object";
+import Setup from "./topics/02-advance/2-useEffect/setup/1-useEffect-basic";
 
-
-import './/index.css';
+import ".//index.css";
 
 
 function App() {
