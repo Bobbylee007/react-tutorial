@@ -172,8 +172,9 @@ a{
        }
     
     .container{
-        grid-template-columns: repeat(3, 1fr);
-        align-items: start;
+        /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 56px; */
+        align-items: center;
     }
 }
 
@@ -181,11 +182,12 @@ a{
     section{
        width: 95vw;
     }
-
+    
     .container {
-        
+        display: grid;
         text-align: center;
         margin-top: 5rem;
+        align-items: center;
 }
 
 .btn{
