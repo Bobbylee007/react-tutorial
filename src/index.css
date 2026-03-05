@@ -156,6 +156,25 @@ a{
     background: var(--clr-primary-1);
     color: var(--clr-primary-5);
 }
+ .users {
+    display: grid;
+    gap: 32px
+        
+}
+ .user {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+
+ }
+img{
+    border-radius: 100%;
+    aspect-ratio: 1;
+   width: 56px;
+
+    
+}
 
 
 @media screen and (min-width:768px) {
@@ -172,10 +191,12 @@ a{
        }
     
     .container{
-        /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 56px; */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 56px;
         align-items: center;
     }
+
+  
 }
 
 @media screen and (min-width:992px) {

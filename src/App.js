@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./topics/02-advance/2-useEffect/setup/2-useEffect-cleanup";
+import Setup from "./topics/02-advance/2-useEffect/setup/3-useEffect-fetch-data";
 
 import ".//index.css";
 
