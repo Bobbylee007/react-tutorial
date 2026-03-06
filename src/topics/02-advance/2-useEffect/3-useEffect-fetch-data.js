@@ -25,17 +25,19 @@ const UseEffecteFetch = () => {
   //NB: dont use async await outside useEffect callback func either inside or a seperat
   return (
     <>
-
       <h2>github users</h2>
       <ul className="users">
         {users.map((user) => {
-          const { id, login, avatar_url, html_rl } = user;
-          return <li key={id} className="user">
-            <img src={avatar_url} alt={login}/>
-            <div>
+          const { id, login, avatar_url, html_url } = user;
+          return (
+            <li key={id} className="user">
+              <img src={avatar_url} alt={login} />
+              <div>
                 <h4>{login}</h4>
-            </div>
-          </li>;
+                <a href={html_url}>profile</a>
+              </div>
+            </li>
+          );
         })}
       </ul>
     </>

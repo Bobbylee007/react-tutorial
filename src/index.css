@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: var(--spacing);
     text-transform: capitalize;
     line-height:  1.25;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 
@@ -95,6 +95,7 @@ ul{
 }
 a{
     text-decoration: none;
+    text-align: start;
 }
 
 .container{
@@ -162,16 +163,30 @@ a{
         
 }
  .user {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    
+    background: var(--clr-white);
+    border-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: start;
+    justify-content: start;
+    gap: 8px;
+    align-items: center;
+    width: 350px;
+}
 
+ .user div, h4, a{
+    text-align:start;
+    margin-block-start: 0.5rem;
+    margin-inline-start: 0.5rem;
  }
+
+
 img{
     border-radius: 100%;
     aspect-ratio: 1;
-   width: 56px;
+    width: 56px;
+    object-fit: cover;
 
     
 }
@@ -191,11 +206,41 @@ img{
        }
     
     .container{
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 56px;
+        grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+        gap: 8px;
         align-items: center;
+        padding-inline:2rem;
     }
 
+    .users {
+       display: grid;
+       grid-template-columns:repeat(3, 1fr) ;
+       gap: 8px;
+       width: var(--max-width);
+    }
+
+.user {
+    background: var(--clr-white);
+    border-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: start;
+    justify-content: start;
+    gap: 8px;
+    align-items:start;
+    width: 350px;
+}
+
+ .user h4{
+     text-align: start;
+     margin-block-start: 0.5rem;
+     margin-inline-start: 0.5rem;
+ }
+ .user div a{
+    width: 100%;
+    align-self: start;
+ }
   
 }
 
@@ -333,5 +378,23 @@ color: var(--clr-red-dark);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px 1fr));
 }
+.user {
+    background: var(--clr-white);
+    border-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: start;
+    justify-content: start;
+    gap: 8px;
+    align-items: start;
+    width: 300px;
+}
+
+ .user h4 {
+     text-align: start;
+     margin-block-start: 0.5rem;
+     margin-inline-start: 0.5rem;
+ }
 
 }
