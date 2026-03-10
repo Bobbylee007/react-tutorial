@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./topics/02-advance/3-conditional-rendering/3-show-hide";
+import Setup from "./topics/02-advance/4-form/1-controlled-inputs";
 
 import ".//index.css";
 
