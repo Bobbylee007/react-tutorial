@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./topics/02-advance/4-form/1-controlled-inputs";
+import Setup from "./topics/02-advance/4-form/2-multiple-input";
 
 import ".//index.css";
 
