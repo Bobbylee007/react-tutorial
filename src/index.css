@@ -181,6 +181,20 @@ a{
     margin-inline-start: 0.5rem;
  }
 
+ .modal {
+     position: absolute;
+     top: 1rem;
+     left: 50%;
+     transform: translateX(-50%);
+     background: var(--clr-white);
+     display: inline-block;
+     padding: 0.25em 1rem;
+     border-radius: var(--rd-corners);
+     text-transform: capitalize;
+ 
+
+ }
+
 
 .modal p {
     margin-bottom: 0;

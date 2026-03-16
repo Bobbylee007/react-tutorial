@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./topics/02-advance/5-useRef/1-useRef-basic";
+import Setup from "./topics/02-advance/6-useReducer//setup";
 
 import ".//index.css";
 
