@@ -4,8 +4,22 @@ import { data } from "../../../../data";
 //reducer function
 
 const reducer = (state, action) => {
- if(action.type=== 'TESTING')
-  return state  
+  console.log(state);
+  if (action.type === "ADD_ITEM") {
+    const newPeople = [...state.people, action.paypload];
+    return {
+      ...state,
+      people: newPeople,
+      isModalOpen: true,
+      modalContent: "item added",
+    };
+  }
+
+  if (action.type === "NO_VALUE") {
+    return { ...state, isModalOpen: true, modalContent: "please enter value" };
+  }
+
+  throw new Error("no mathing action type");
 };
 
 const defaultState = {
@@ -20,8 +34,11 @@ const Index = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
-      dispatch({type:'TESTING'})
+      const newPeople = { id: new Date().getTime().toString(), name };
+      dispatch({ type: "ADD_ITEM", paypload: newPeople });
+      setName();
     } else {
+      dispatch({ type: "NO_VALUE" });
     }
   };
   return (
