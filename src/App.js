@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./topics/02-advance/6-useReducer//setup";
+import Setup from "./topics/02-advance/7-prop-drilling/1-prop-drilling";
 
 import ".//index.css";
 
