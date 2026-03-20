@@ -111,9 +111,8 @@ a{
     border-radius: var(--rd-corners);
     display: flex;
     justify-content:space-between ;
-    align-content: center
-    ;
-    margin: 2rem;
+    align-content: center;
+    margin: 1rem;
 
 
 }
