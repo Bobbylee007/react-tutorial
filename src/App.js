@@ -1,5 +1,5 @@
 import React from "react";
-import Setup from "./topics/02-advance/9-custom-hooks/1-fetch-example";
+import Setup from "./topics/02-advance/10-prop-types";
 
 import ".//index.css";
 
