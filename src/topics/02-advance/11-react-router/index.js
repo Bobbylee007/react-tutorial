@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // NB1: from v6 switch is change to Routes
 // NB2: Use element instead of children
 
-
 // page
 import Home from "./Home";
 import About from "./About";
@@ -19,21 +18,17 @@ import Navbar from "./Navbar";
 const ReactRouterSetup = () => {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-      </Routes>
-      <Routes>
         <Route path="/about" element={<About />} />
-      </Routes>
-      <Routes>
         <Route path="/people" element={<People />} />
+        <Route path="/person/:id" element={<Person />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   );
 };
-
-
-
 
 // Old
 

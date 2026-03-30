@@ -139,10 +139,10 @@ a{
 }
 
 .btn {
-    display: inline-block;
+    text-align: center;
     background: var(--clr-primary-5);
     color: var(--clr-white);
-    padding: 0.25rem 00.75rem;
+    padding: 0.25rem 0.75rem;
     border-radius: var(--rd-corners);
     border-color: transparent;
     text-transform: capitalize;
